@@ -1,18 +1,18 @@
 import React, {Component, Fragment} from "react";
-import bolder from "../static/momeyer.png";
-import thin from "../static/monique.png";
+import MoniqueMeyer from "../static/monique.png";
+import { useSpring, animated } from "react-spring";
 
-class Header extends Component {
-  state = {};
-  render() { 
-    return (
-      <div className="container-fluid p-0 row">
-        <div className="offset-5 my-3">
-          <img style={{ position: "absolute", marginTop:"10px", marginLeft:"-40px" }} src={thin} height="30px" />
-          <img src={bolder} height="50px"/>
-        </div>
-      </div>
-    );
-  }
+function Header() {
+  const props = useSpring({ opacity: 1, from: { opacity: 0 } });
+  return (
+    <animated.nav
+      style={props}
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
+    >
+      <span class="navbar-brand mx-auto" href="#">
+        <animated.img style={props} src={MoniqueMeyer}></animated.img>
+      </span>
+    </animated.nav>
+  );
 }
 export default Header;

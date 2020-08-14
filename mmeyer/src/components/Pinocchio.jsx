@@ -1,14 +1,14 @@
 import React from "react";
-import logo from "../static/idRS4U.png"
-import Image from "./ImageRS4U.jsx";
+import logo from "../static/idPinocchio.png";
+import Image from "./ImagePinocchio.jsx";
 import { useSpring, animated } from "react-spring";
 
-function RealState () {
+function Pinocchio() {
   const props = useSpring({
     to: { opacity: 1, marginLeft: 0 },
     from: { opacity: 0, marginLeft: 100 },
     config: { delay: 1500, duration: 1500 },
-  } );
+  });
   return (
     <div className="col-10 row mt-5 offset-1">
       <Image />
@@ -23,27 +23,26 @@ function RealState () {
           nisl ac, pellentesque porta nisl. Suspendisse porta ut enim at mattis.
         </span>
         <div className="col-12 my-5 row">
-          <span
-            style={js_style}
-          ></span>
-          <span
-            style={python_style}
-          ></span>
-          <span
-            style={html_style}
-          ></span>
+          <span style={python_style}></span>
+          <span style={js_style}></span>
+          <span style={html_style}></span>
+          <span style={css_style}></span>
           <dl>
             <div className="col-sm-12">
               <dt className="yellow"></dt>
-              <dd className="legend"> JavaScript / ReactJs 74.3%</dd>
+              <dd className="legend">Python 50%</dd>
             </div>
             <div className="col-sm-12">
               <dt className="blue"></dt>
-              <dd className="legend">Python 23.4%</dd>
+              <dd className="legend">JavaScript / ReactJs 39.3%</dd>
             </div>
             <div className="col-sm-12">
               <dt className="red"></dt>
-              <dd className="legend">HTM 2.3%</dd>
+              <dd className="legend">HTM 7.6%</dd>
+            </div>
+            <div className="col-sm-12">
+              <dt className="green"></dt>
+              <dd className="legend">CSS 3.1%</dd>
             </div>
           </dl>
         </div>
@@ -52,28 +51,32 @@ function RealState () {
   );
 }
 
-const js_style = {
+const python_style = {
   backgroundColor: "#FECB34",
   height: "10px",
-  width: "74.3%",
+  width: "50%",
   borderTopLeftRadius: "10px",
   borderBottomLeftRadius: "10px",
 };
-const python_style = {
+const js_style = {
   backgroundColor: "#2AB7CA",
   height: "10px",
-  width: "20.4%",
+  width: "38%",
   marginLeft: "2px",
 };
 
 const html_style = {
   backgroundColor: "#FE4A49",
   height: "10px",
-  width: "2.3%",
+  width: "7%",
+  marginLeft: "2px"
+};
+const css_style = {
+  backgroundColor: "#23C269",
+  height: "10px",
+  width: "3%",
   marginLeft: "2px",
   borderTopRightRadius: "10px",
   borderBottomRightRadius: "10px",
 };
-export default RealState;
-
-
+export default Pinocchio;

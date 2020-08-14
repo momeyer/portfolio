@@ -2,7 +2,8 @@ import React from "react";
 import Header from "./components/Header.jsx";
 import Flack from "./components/Flack.jsx";
 import RealState from "./components/RealState.jsx";
-
+import Pinocchio from "./components/Pinocchio.jsx";
+import Contact from "./components/ContactInfo.jsx";
 import "./App.css";
 
 function App() {
@@ -11,6 +12,8 @@ function App() {
       <Header />
       <RealState />
       <Flack />
+      <Pinocchio />
+      <Contact />
     </div>
   );
 }

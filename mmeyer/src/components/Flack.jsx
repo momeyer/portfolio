@@ -14,7 +14,7 @@ function Flack() {
       from: { opacity: 1 }
     });
   return (
-    <div className="col-10 row mt-5 offset-1">
+    <div className="col-10 row mt-5 offset-1 col-xs-push-10">
       <animated.div style={props} className="col-sm-10 col-lg-6">
         <div className="col-sm-12 col-lg-5 mb-4">
           <img src={logo} width="95%" />
@@ -26,41 +26,41 @@ function Flack() {
           nisl ac, pellentesque porta nisl. Suspendisse porta ut enim at mattis.
         </span>
         <div className="col-12 mt-4 row">
-            <span
-              style={{
-                backgroundColor: "#FE4A49",
-                height: "10px",
-                width: "40%",
-                borderTopLeftRadius: "10px",
-                borderBottomLeftRadius: "10px",
-              }}
-            ></span>
-            <span
-              style={{
-                backgroundColor: "#FECB34",
-                height: "10px",
-                width: "32%",
-                marginLeft: "3px",
-              }}
-            ></span>
-            <span
-              style={{
-                backgroundColor: "#2AB7CA",
-                height: "10px",
-                marginLeft: "2px",
-                width: "15%",
-              }}
-            ></span>
-            <span
-              style={{
-                backgroundColor: "#23C269",
-                height: "10px",
-                marginLeft: "2px",
-                width: "5%",
-                borderTopRightRadius: "15px",
-                borderBottomRightRadius: "10px",
-              }}
-            ></span>
+          <span
+            style={{
+              backgroundColor: "#FE4A49",
+              height: "10px",
+              width: "40%",
+              borderTopLeftRadius: "10px",
+              borderBottomLeftRadius: "10px",
+            }}
+          ></span>
+          <span
+            style={{
+              backgroundColor: "#FECB34",
+              height: "10px",
+              width: "32%",
+              marginLeft: "3px",
+            }}
+          ></span>
+          <span
+            style={{
+              backgroundColor: "#2AB7CA",
+              height: "10px",
+              marginLeft: "2px",
+              width: "15%",
+            }}
+          ></span>
+          <span
+            style={{
+              backgroundColor: "#23C269",
+              height: "10px",
+              marginLeft: "2px",
+              width: "5%",
+              borderTopRightRadius: "15px",
+              borderBottomRightRadius: "10px",
+            }}
+          ></span>
           <dl>
             <div className="col-sm-12">
               <dt className="red"></dt>

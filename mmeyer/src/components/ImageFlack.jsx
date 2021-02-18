@@ -10,7 +10,7 @@ function Image() {
     config: { delay: 1500, duration: 1500 },
   });
   return (
-      <div className="col-sm-10 col-lg-5 mx-auto mt-5">
+    <div className="flack_image col-sm-10 col-lg-5 mx-auto mt-5">
       <animated.img style={props} src={Mockup} width="95%" />
     </div>
   );
